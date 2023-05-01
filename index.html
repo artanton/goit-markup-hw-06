@@ -530,6 +530,24 @@
             </li>
           </ul>
         </div>
+        <div>
+
+        <div class="subscribe">
+          <p class="social-media-title">Subscribe</p>
+
+          <span class="subscribe-form">
+
+            <label for="subscribe-email" class="subscribe-label">E-mail</label>
+
+            <input type="subscribe-email" class="subscribe-input">
+
+            <button class="hero-btn">Subscribe
+              <svg class="subscribe-btn-icon" width="24" height="24">
+                <use href=""></use>
+              </svg>
+            </button>
+          </span>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
@@ -546,7 +564,7 @@
         <form class="modal-form" name="contact-form">
 
          <label class="contact-label" for="user-name" >Name</label>
-          <div class="contact-field-input">
+          <div class="input-modal">
             
             <input class="input-modal-field" type="text" name="user-name" >
             
@@ -558,7 +576,7 @@
          
          
          <label class="contact-label" for="user-phone" >Phone</label>
-          <div class="contact-field-input">
+          <div class="input-modal">
             
             <input class="input-modal-field" type="tel" name="user-phone" >
             
@@ -570,7 +588,7 @@
          
          
          <label class="contact-label" for="user-email" >Email</label>
-          <div class="contact-field-input">
+          <div class="input-modal">
             
             <input class="input-modal-field" type="email" name="user-email" >
             
@@ -580,15 +598,20 @@
 
           </div>
 
-          <label class="contact-label" for="">Comment</label>
-          <textarea class="comment-window" name=""  rows="8" placeholder="Text input"></textarea>
+          <label class="contact-label" for="comment">Comment</label>
+          <textarea class="comment-window" name="comment"  rows="8" placeholder="Text input"></textarea>
          
-          <label for="">
-            <input type="checkbox">
-            <p class="modal-window-checkbox-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></p>
-          </label>
+          <span class="modal-privacy-container">
+            <label class="modal-privacy">
+              <input class="modal-privacy-checkbox" type="checkbox">
+              <svg class="modal-privacy-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <p class="modal-privacy-text">I accept the terms and conditions of the <a class="privacy-text-link" href="">Privacy Policy</a></p>
+            </label>
+          </span>
 
-          <button class="modal-send-btn" type="submit">Send</button>
+          <button class="modal-send-btn hero-btn" type="submit">Send</button>
 
         </form>
       </div>
