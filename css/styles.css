@@ -84,6 +84,31 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
+.general-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: white;
+  background: var(--btn-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+
+  transition: background-color var(--slow) var(--animation),
+    box-shadow var(--slow) var(--animation),
+    border-radius var(--slow) var(--animation);
+}
+.general-btn:hover,
+.general-btn:focus {
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* base styles end */
 
 /* header */
@@ -228,34 +253,12 @@ img {
 }
 
 .hero-btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
   display: block;
   min-width: 169px;
   min-height: 56px;
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
-
-  color: white;
-  background: var(--btn-background-color);
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-
-  transition: background-color var(--slow) var(--animation),
-    box-shadow var(--slow) var(--animation),
-    border-radius var(--slow) var(--animation);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* features */
@@ -452,7 +455,7 @@ img {
   display: block;
   margin-right: 80px;
 }
-.social-media-title {
+.footer-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -478,33 +481,62 @@ img {
   border-color: #31d0aa;
 }
 
-
-.subscribe {
-  display: flex;
-  justify-content: flex-end;
+.subscribe-block {
+  display: block;
   width: 453px;
 }
-.social-media-title {
-}
+
 .subscribe-form {
 }
+
+.subscribe-title-wrapper {
+  margin-bottom: 16px;
+}
+.subscription-form-wrapper {
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
+
 .subscribe-label {
 }
 .subscribe-input {
+  width: 264px;
+  height: 40px;
+
+  padding-left: 16px;
+  background-color: var(--main-text-color);
+  border: 1px solid #ffffff;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+  outline: transparent;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+  /* padding-left: 16px; */
 }
 .subscribe-btn {
-
- /* display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 24px;
-gap: 16px   */
-
-background-color: var(btn-background-color);
-border-radius: 4px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
 }
+
 .subscribe-btn-icon {
 }
 
@@ -776,6 +808,14 @@ border-radius: 4px;
   resize: none;
   outline: transparent;
 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+
   transition: fill var(--slow) var(--animation);
 }
 
@@ -813,7 +853,7 @@ border-radius: 4px;
   width: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  
+
   transition: border-color var(--slow) var(--animation),
     background-color var(--slow) var(--animation);
 }
@@ -850,5 +890,11 @@ border-radius: 4px;
 }
 
 .modal-send-btn {
+  display: block;
+  min-width: 169px;
+  min-height: 56px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
 }

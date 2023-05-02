@@ -67,7 +67,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-head">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button class="hero-btn general-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -481,7 +481,7 @@
           </p>
         </div>
         <div class="footer-media">
-          <p class="social-media-title">Social media</p>
+          <p class="footer-title">Social media</p>
 
           <ul class="social-footer-list list">
             <li class="social-items">
@@ -532,21 +532,25 @@
         </div>
         <div>
 
-        <div class="subscribe">
-          <p class="social-media-title">Subscribe</p>
+        <div class="subscribe-block">
+                    
+            <form class="subscribe-form" name="subscribe-form">
 
-          <span class="subscribe-form">
+              <p class="subscribe-title-wrapper">
+                <label class="footer-title" for="subscribe-email" >Subscribe</label>
+              </p>
+              
+              <div class="subscription-form-wrapper">              
+                <input class="subscribe-input" type="email" name="subscribe-email" placeholder="E-mail">
 
-            <label for="subscribe-email" class="subscribe-label">E-mail</label>
-
-            <input type="subscribe-email" class="subscribe-input">
-
-            <button class="hero-btn">Subscribe
-              <svg class="subscribe-btn-icon" width="24" height="24">
-                <use href=""></use>
-              </svg>
-            </button>
-          </span>
+                <button class="general-btn subscribe-btn" type="submit"><span>Subscribe</span>
+                  <svg class="subscribe-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+            </form>
+          
         </div>
       </div>
     </footer>
@@ -611,7 +615,7 @@
             </label>
           </span>
 
-          <button class="modal-send-btn hero-btn" type="submit">Send</button>
+          <button class="modal-send-btn general-btn" type="submit">Send</button>
 
         </form>
       </div>
