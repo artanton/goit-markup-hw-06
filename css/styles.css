@@ -451,9 +451,7 @@ img {
 }
 
 .footer-media {
-  width: 208px;
-  display: block;
-  margin-right: 80px;
+
 }
 .footer-title {
   font-weight: 500;
@@ -482,24 +480,23 @@ img {
 }
 
 .subscribe-block {
-  display: block;
-  width: 453px;
-}
-
-.subscribe-form {
+  margin-left: auto;
+  
 }
 
 .subscribe-title-wrapper {
   margin-bottom: 16px;
 }
-.subscription-form-wrapper {
+.subscribe-form {
   position: relative;
   display: flex;
   gap: 24px;
 }
-
 .subscribe-label {
 }
+
+
+
 .subscribe-input {
   width: 264px;
   height: 40px;
@@ -526,12 +523,10 @@ img {
   font-size: 12px;
   line-height: 2;
   color: #ffffff;
-  /* padding-left: 16px; */
+ 
 }
 .subscribe-btn {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   padding: 8px 24px;
   gap: 16px;
@@ -687,12 +682,15 @@ img {
 
 .modal-window {
   width: 408px;
-  min-height: 576px;
+  /* min-height: 576px; */
   position: absolute;
   z-index: 3;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) scale(1);
+  
+  padding: 72px 24px 24px 24px;
+  
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -715,7 +713,7 @@ img {
   height: 24px;
   font-size: 0px;
 
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -739,7 +737,6 @@ img {
 .modal-head {
   display: block;
   text-align: center;
-  margin-top: 72px;
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -748,13 +745,15 @@ img {
 }
 
 .modal-form {
-  display: block;
+  /* display: block;
   margin: 0 auto;
-  width: 360px;
+  width: 360px; */
 }
 .contact-label {
-  font-family: 'Roboto';
-  font-style: normal;
+  /* font-family: 'Roboto';
+  font-style: normal; */
+  display:block;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -837,6 +836,8 @@ img {
 
 .modal-privacy-container {
   position: relative;
+  margin-bottom: 24px;
+  display: block;
 }
 
 .modal-privacy {
@@ -844,7 +845,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
+ 
 }
 
 .modal-privacy-checkbox {
@@ -865,7 +866,7 @@ img {
 
 .modal-privacy-checkbox-icon {
   position: absolute;
-  left: -357px;
+  left: 3px;
   opacity: 0;
   transition: opacity var(--slow) var(--animation);
 }
@@ -896,5 +897,5 @@ img {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  
 }
